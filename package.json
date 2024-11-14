@@ -1,13 +1,13 @@
 {
-  "name": "𝕷𝖎𝖍𝖃𝖘𝖕𝖆𝖒",
-  "version": "𝕰𝖗𝖗𝖔𝖗",
+  "name": "LihXpair",
+  "version": "0.0.0",
   "description": "Whatsapp-Crash",
   "main": "spam_pairing.js",
   "type": "commonjs",
   "scripts": {
     "start": "node spam_pairing.js"
   },
-  "author": "REYHAN6610",
+  "author": "LihXpair",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
