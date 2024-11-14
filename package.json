@@ -2,10 +2,10 @@
   "name": "𝕷𝖎𝖍𝖃𝖘𝖕𝖆𝖒",
   "version": "𝕰𝖗𝖗𝖔𝖗",
   "description": "Whatsapp-Crash",
-  "main": "lihxspam.js",
+  "main": "spam_pairing.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node lihxspam.js"
+    "start": "node spam_pairing.js"
   },
   "author": "REYHAN6610",
   "license": "MIT",
